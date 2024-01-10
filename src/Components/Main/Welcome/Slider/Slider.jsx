@@ -1,5 +1,6 @@
-// slider imgs
 import { useState } from 'react';
+
+// slider imgs
 import watch1 from '../../../../assets/header/carousel/watch1.png';
 import watch2 from '../../../../assets/header/carousel/watch2.png';
 import watch3 from '../../../../assets/header/carousel/watch3.png';
