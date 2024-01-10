@@ -1,0 +1,197 @@
+.header {
+    background-color: $black;
+    padding: 1.25rem 0;
+
+    &__container {
+        gap: 5rem;
+        align-items: center;
+        position: relative;
+    }
+
+    &__logo {
+        flex: 1;
+        max-width: 7.6875rem;
+        max-height: 1.1875rem;
+    }
+
+    &__menu {
+        flex: 2;
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu-list {
+        display: flex;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    &__menu-link {
+        color: $white;
+        font-size: .5625rem;
+        font-weight: 400;
+        line-height: .75rem; 
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+
+        &:hover {
+            letter-spacing: .0625rem;
+        }
+    }
+
+    &__contact {
+        max-width: 10rem;
+        flex: 1;
+        color: $white;
+        font-size: .5625rem;
+        font-weight: 400;
+        line-height: .75rem;
+        padding: 1.125rem 2.25rem;
+        background-color: $green;
+        border-radius: .5rem;
+        transition: all 0.3s ease;
+        text-align: center;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            font-size: 9px;
+        }
+    }
+
+
+    &__burger {
+        display: none;
+        flex-direction: column;
+        gap: .125rem;
+
+        &_line {
+            display: block;
+            background-color: #fff;
+            height: .125rem;
+            width: 1.25rem;
+            transition: all 0.3s ease;
+        }
+        
+        &.active {
+            .header__burger_line {
+
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+                
+                &:nth-child(2) {
+                    display: none;
+                }
+                
+                &:nth-child(3) {
+                    margin-top: -0.25rem;
+                    transform: rotate(-45deg);
+                }
+            }
+     
+        }
+       
+}
+
+}
+
+.header-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: $green;
+    transform: translate(-100%, 0%);
+    transition: transform 1s ease-in;
+
+    &__menu {
+        height: 50%;
+    }
+
+    &__menu-list {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3.75rem;
+    }
+
+    &__menu-link {
+        color: $white;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: .75rem;
+        text-transform: uppercase;
+    }
+
+    &__contact {
+        color: $white;
+        font-size: .75rem;
+        font-weight: 400;
+        line-height: .75rem;
+        padding: 1.125rem 2.25rem;
+        border-radius: .5rem;
+    }
+}
+
+
+@media(max-width:768px) {
+    .header {
+
+        &__container {
+            justify-content: space-around;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__burger {
+            display: flex;
+        }
+    }
+
+    .header-mobile  {
+
+        &.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            transform: translate(0%, 0%);
+            left: 0;
+            transition: transform 1s ease-in;
+        }
+
+        &__contact {
+            display: none;
+        }
+    }
+}
+
+@media(max-width:500px) {
+
+    .header{
+        &__contact {
+            display: none;
+        }
+
+        &__burger.active {
+            .header__burger_line {
+                background-color: red;
+            }
+        }
+    }
+
+    .header-mobile  {
+
+        width: 80vw;
+
+        &__contact {
+            display: block;
+        }
+    }
+}

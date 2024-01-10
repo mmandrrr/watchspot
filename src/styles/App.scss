@@ -1,0 +1,26 @@
+@import './style-services/reset.css';
+@import './style-services/normalize.css';
+@import './style-services/colors';
+@import './style-services/fonts';
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+[class*=container] {
+    padding: 0rem .625rem;
+    max-width: 72.5rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+@import '../Components/Header/header';
+@import '../Components/Main/main';
