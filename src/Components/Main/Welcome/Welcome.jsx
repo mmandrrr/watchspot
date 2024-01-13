@@ -1,6 +1,5 @@
-
-
 import mainImg from '../../../assets/header/main-pic.png';
+
 import Slider from './Slider/Slider';
 
 const Welcome = () => {

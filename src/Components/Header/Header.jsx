@@ -10,8 +10,10 @@ const Header = () => {
     const toggleMobileMenu = () => {
         if(mobileMenuStatus === 'active') {
             setMobileMenuStatus('');
+            document.querySelector('body').style.overflowY = 'auto';
         } else {
             setMobileMenuStatus('active');
+            document.querySelector('body').style.overflowY = 'hidden';
         }
     }
 
