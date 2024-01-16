@@ -1,4 +1,5 @@
 import About from "./About/About";
+import Catalog from "./Catalog/Catalog";
 import Welcome from "./Welcome/Welcome";
 
 
@@ -7,6 +8,7 @@ const Main = () => {
         <main className="main">
             <Welcome />
             <About />
+            <Catalog />
         </main>
     )
 }

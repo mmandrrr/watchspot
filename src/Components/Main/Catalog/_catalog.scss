@@ -1,0 +1,75 @@
+.catalog {
+
+    padding: 5rem 0;
+
+    &__container {
+        display: grid;
+        flex-direction: column;
+        gap: 5.625rem;
+        padding: 0;
+    }
+
+    &__item-wrapper {
+        display: flex;
+        column-gap: 1.5rem;
+        row-gap: 5.625rem;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 17.25rem;
+        border: 1px solid #fff;
+        padding: 0 .3125rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid #000;
+            transition: all 0.3s ease;
+        }
+    }
+
+    &__item-img {
+        max-width: 100%;
+        margin-bottom: 2.4375rem;
+
+    }
+
+    &__item-description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: .25rem;
+    }
+
+    &__item-price {
+        color: rgba(20, 20, 20, 0.50);
+        font-size: .75rem;
+        font-weight: 400;
+        line-height: .875rem; 
+        letter-spacing: -0.015rem;
+
+    }
+
+    &__buy-btn {
+        max-width: 7.75rem;
+        padding: 1.125rem 2.1875rem;
+        color: $white;
+        font-size: .75rem;
+        font-weight: 400;
+        line-height: .875rem; 
+        text-transform: uppercase;
+        border-radius: .5rem;
+        background-color: $green;
+        justify-self: end;
+        border: .0625rem solid $black;
+        transition: all 0.3s ease;
+
+        &:hover {
+            cursor: pointer;
+            color: $black;
+            background-color: $white;
+            transition: all 0.3s ease;
+        }
+    }
+}
