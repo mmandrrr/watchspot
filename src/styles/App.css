@@ -454,4 +454,13 @@ body {
   color: #141414;
   background-color: #ffffff;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+  .catalog__container {
+    padding: 0 1.25rem;
+  }
+  .catalog__item-wrapper {
+    row-gap: 2.5rem;
+  }
 }/*# sourceMappingURL=App.css.map */

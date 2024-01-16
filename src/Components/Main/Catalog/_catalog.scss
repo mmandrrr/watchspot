@@ -73,3 +73,15 @@
         }
     }
 }
+
+@media(max-width:1200px) {
+    .catalog{
+        &__container {
+            padding: 0 1.25rem;
+        }
+
+        &__item-wrapper {
+            row-gap: 2.5rem;
+        }
+    }
+}
