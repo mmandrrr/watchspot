@@ -402,6 +402,7 @@ body {
 }
 .catalog__item-wrapper {
   display: flex;
+  justify-content: center;
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
   row-gap: 5.625rem;
@@ -462,5 +463,45 @@ body {
   }
   .catalog__item-wrapper {
     row-gap: 2.5rem;
+  }
+}
+.new {
+  padding: 5rem 0;
+}
+.new__container {
+  flex-direction: column;
+  padding: 0;
+}
+.new__upper-title {
+  color: rgba(20, 20, 20, 0.4);
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0.045rem;
+  margin-bottom: 0.5rem;
+}
+.new__title {
+  max-width: 28rem;
+  margin-bottom: 5rem;
+}
+.new__imgs {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.new__imgs img {
+  width: 100%;
+  max-width: 36rem;
+}
+
+@media (max-width: 1200px) {
+  .new__container {
+    padding: 0.625rem;
+  }
+  .new__imgs {
+    justify-content: center;
+  }
+  .new__imgs img {
+    max-width: 21.375rem;
   }
 }/*# sourceMappingURL=App.css.map */

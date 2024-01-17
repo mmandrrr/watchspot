@@ -1,5 +1,6 @@
 import About from "./About/About";
 import Catalog from "./Catalog/Catalog";
+import New from "./New/New";
 import Welcome from "./Welcome/Welcome";
 
 
@@ -9,6 +10,7 @@ const Main = () => {
             <Welcome />
             <About />
             <Catalog />
+            <New />
         </main>
     )
 }
